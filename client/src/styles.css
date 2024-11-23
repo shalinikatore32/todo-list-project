@@ -1,0 +1,174 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input[type='text'],
+  form input[type='date'],
+  form select {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  form button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Search Bar */
+  input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  /* Filter Buttons */
+  div.filter-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Filter Button Styles */
+  button.filter-btn {
+    padding: 10px 15px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+  }
+  
+  button.filter-btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+  }
+  
+  button.filter-btn:focus {
+    outline: none; /* Remove focus outline */
+  }
+  
+  /* Todo List Styles */
+  ul {
+    list-style-type: none;
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: #f9f9f9;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    background-color: #e9f7ef; /* Light green background for completed items */
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  button.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    form input[type='text'],
+    form input[type='date'],
+    form select,
+    form button,
+    input[type="text"] {
+      width: 90%;
+    }
+  
+    ul {
+      width: 90%;
+    }
+  
+    button.filter-btn {
+      padding: 8px 12px;
+    }
+  }
+  
